@@ -11,7 +11,7 @@ Este projeto é uma API desenvolvida com FastAPI para gerenciar alunos, cursos e
 ## Passos para subir o projeto
 
 1. **Faça o download do repositório:**
-   [Clique aqui para realizar o download](https://github.com/guilhermeonrails/imersao-devops/archive/refs/heads/main.zip)
+   [Clique aqui para realizar o download](https://github.com/MaduAraujo/API-Gestao-Escolar/archive/refs/heads/main.zip)
 
 2. **Crie um ambiente virtual:**
    ```sh
@@ -27,7 +27,7 @@ Este projeto é uma API desenvolvida com FastAPI para gerenciar alunos, cursos e
    ```sh
    Set-ExecutionPolicy RemoteSigned
    ```
-
+   
      ```sh
      venv\Scripts\activate
      ```
@@ -49,20 +49,23 @@ Este projeto é uma API desenvolvida com FastAPI para gerenciar alunos, cursos e
 
    Aqui você pode testar todos os endpoints da API de forma interativa.
 
----
-
 ## Estrutura do Projeto
 
-- `app.py`: Arquivo principal da aplicação FastAPI.
-- `models.py`: Modelos do banco de dados (SQLAlchemy).
-- `schemas.py`: Schemas de validação (Pydantic).
-- `database.py`: Configuração do banco de dados SQLite.
-- `routers/`: Diretório com os arquivos de rotas (alunos, cursos, matrículas).
-- `requirements.txt`: Lista de dependências do projeto.
-
----
-
-- O banco de dados SQLite será criado automaticamente como `escola.db` na primeira execução.
-- Para reiniciar o banco, basta apagar o arquivo `escola.db` (isso apagará todos os dados).
-
----
+```markdown
+├── .dockerignore
+├── .gitattributes
+├── .gitignore
+├── .pycache/
+├── Dockerfile
+├── app.py
+├── database.py
+├── docker-compose.yml
+├── escola.db
+├── models.py
+├── readme.md
+├── requirements.txt
+├── routers/
+│   └── **init**.py  (Assumindo que este arquivo esteja dentro, mesmo que não mostrado explicitamente)
+└── schemas.py
+└── venv/
+```
