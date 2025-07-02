@@ -1,41 +1,47 @@
-# Imersão DevOps - Alura Google Cloud
+# Imersão DevOps - Alura Google Cloud: API de Gestão Educacional
 
-Este projeto é uma API desenvolvida com FastAPI para gerenciar alunos, cursos e matrículas em uma instituição de ensino.
+Este projeto apresenta uma API RESTful desenvolvida com FastAPI para o gerenciamento de alunos, cursos e matrículas em uma instituição de ensino.
 
 ## Pré-requisitos
+
+Para executar esta aplicação, certifique-se de ter os seguintes softwares instalados:
 
 - [Python 3.10 ou superior instalado](https://www.python.org/downloads/)
 - [Git](https://git-scm.com/downloads)
 - [Docker](https://www.docker.com/get-started/)
 
-## Passos para subir o projeto
+## Configuração e Execução
 
-1. **Faça o download do repositório:**
-   [Clique aqui para realizar o download](https://github.com/MaduAraujo/API-Gestao-Escolar/archive/refs/heads/main.zip)
+1. **Download do repositório:**
+   [Baixe o projeto](https://github.com/MaduAraujo/API-Gestao-Escolar/archive/refs/heads/main.zip)
 
-2. **Crie um ambiente virtual:**
-   ```sh
-   python3 -m venv ./venv
-   ```
+2.  **Criação do Ambiente Virtual:**<br>
+    Navegue até o diretório raiz do projeto e crie um ambiente virtual Python:
 
-3. **Ative o ambiente virtual:**
-   - No Linux/Mac:
-     ```sh
-     source venv/bin/activate
-     ```
-   - No Windows, abra um terminal no modo administrador e execute o comando:
-   ```sh
-   Set-ExecutionPolicy RemoteSigned
-   ```
-   
-     ```sh
-     venv\Scripts\activate
-     ```
+    ```sh
+    python3 -m venv ./venv
+    ```
+    
+3.  **Instalação de Dependências:**<br>
+    Com o ambiente virtual ativado, instale as bibliotecas necessárias listadas em `requirements.txt`:
 
-4. **Instale as dependências:**
-   ```sh
-   pip install -r requirements.txt
-   ```
+    ```sh
+    pip install -r requirements.txt
+    ```
+
+4.  **Ativação do Ambiente Virtual:**<br>
+    Ative o ambiente virtual recém-criado:
+
+      * **Linux/macOS:**
+        ```sh
+        source venv/bin/activate
+        ```
+      * **Windows:**
+        Abra o terminal como administrador e execute os seguintes comandos:
+        ```powershell
+        Set-ExecutionPolicy RemoteSigned
+        venv\Scripts\activate
+        ```
 
 5. **Execute a aplicação:**
    ```sh
@@ -45,7 +51,7 @@ Este projeto é uma API desenvolvida com FastAPI para gerenciar alunos, cursos e
 6. **Acesse a documentação interativa:**
 
    Abra o navegador e acesse:  
-   [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
+   [http://localhost:8000/docs](http://localhost:8000/docs)
 
    Aqui você pode testar todos os endpoints da API de forma interativa.
 
@@ -79,10 +85,12 @@ Este projeto é uma API desenvolvida com FastAPI para gerenciar alunos, cursos e
 
 ---
 
-- O banco de dados SQLite será criado automaticamente como `escola.db` na primeira execução.
-- Para reiniciar o banco, basta apagar o arquivo `escola.db` (isso apagará todos os dados).
+**Observações:**
 
----
+  * O banco de dados SQLite (`escola.db`) será automaticamente criado na primeira execução da aplicação, caso não exista.
+  * Para redefinir o banco de dados e apagar todos os dados existentes, basta excluir o arquivo `escola.db`.
+
+-----
 
 ## API Interativa
 
@@ -97,4 +105,3 @@ Este projeto é uma API desenvolvida com FastAPI para gerenciar alunos, cursos e
 <p align="center">
   <img src="https://github.com/user-attachments/assets/468b29c7-f44d-4f55-84b7-599591bb2a9c" width="800">
 </p>
-
