@@ -69,3 +69,18 @@ Este projeto é uma API desenvolvida com FastAPI para gerenciar alunos, cursos e
 └── schemas.py
 └── venv/
 ```
+
+## API Interativa
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/a161fb7f-1ec7-4b87-8ed4-6f87378dcbff" width="800">
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/0ae003b1-af94-4c06-bf09-1ef45d68fea3" width="800">
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/468b29c7-f44d-4f55-84b7-599591bb2a9c" width="800">
+</p>
+
